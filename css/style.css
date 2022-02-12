@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-color: var(--PaleBlue);
+    background-repeat: repeat-x;
+}
+.card{
+    margin: 80px auto;
+    border-radius: 15px;
+    width: 352px;
+    height: 552px;    
+    background-color: white;
+    box-shadow: 0px 22px 38px -36px var(--BrightBlue);
+}
+
+header{
+    width: 100%;
+    height: 200px;
+}
+
+.card header img{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+
+.content{
+    margin: 0px 38px;
+}
+
+.text{
+    text-align: center;
+}
+
+.text h1{
+    color: var(--DarkBlue);
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.text p{
+    color: var(--DesaturatedBlue);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-top: 17px;
+}
+
+.plan{
+    background-color: var(--VeryPaleBlue);
+    border-radius: 9px;
+    display: flex;
+    margin-top: 17px;    
+    align-items: center;
+    padding: 17px;
+}
+
+.plan img{
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+
+.plan > p > a{
+    margin-left: 71px;
+    font-size: 11px;
+    font-weight: 700;
+    
+}
+
+.plan > p > a:hover{
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+}
+
+.plan-type p:first-child{
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.plan-type p:nth-child(2){
+    color: var(--DesaturatedBlue);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.pay{
+    margin-top: 29px;
+}
+
+.pay p{
+    text-align: center;
+    background-color: var(--BrightBlue);
+    font-size: 12px;    
+    font-weight: 700;
+    color: var(--VeryPaleBlue);
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow: 0px 16px 45px -12px var(--BrightBlue);
+}
+
+.pay p:hover{
+    cursor: pointer;
+    background-color: var(--DesaturatedBlue);
+}
+
+.content > p{
+    margin-top: 17px;
+    text-align: center;
+    font-size: 12px;    
+    font-weight: 700;
+    color: var(--DesaturatedBlue);
+    padding: 10px;
+}
+
+.content > p:hover{
+    cursor: pointer;
+    color: var(--DarkBlue);
+}
