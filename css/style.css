@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@font-face {
+    font-family: "Red Hat Display";
+    src:
+        local("Red Hat Display"),
+        url(../assets/fonts/RedHatDisplay.woff2) format("woff2"),
+        url(../assets/fonts/RedHatDisplay.woff) format("woff"),
+        url(../assets/fonts/RedHatDisplay.ttf) format("truetype");
+    font-display: swap;
+}
 
 :root{
     --PaleBlue: hsl(225, 100%, 94%);
     --BrightBlue: hsl(245, 75%, 52%);
     --VeryPaleBlue: hsl(225, 100%, 98%);
-    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DesaturatedBlue: hsl(224 18.82% 48.15%);
     --DarkBlue: hsl(223, 47%, 23%);
 }
 
@@ -15,7 +23,7 @@
 
 body{
     font-family: 'Red Hat Display', sans-serif;
-    background-image: url("../images/pattern-background-desktop.svg");
+    background-image: url("../assets/images/pattern-background-desktop.svg");
     background-color: var(--PaleBlue);
     background-repeat: repeat-x;
 }
@@ -80,7 +88,6 @@ header{
     margin-left: 71px;
     font-size: 11px;
     font-weight: 700;
-    
 }
 
 .plan > p > a:hover{
