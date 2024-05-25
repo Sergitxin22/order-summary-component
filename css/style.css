@@ -21,12 +21,19 @@
     padding: 0px;
 }
 
+html{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
 body{
     font-family: 'Red Hat Display', sans-serif;
     background-image: url("../assets/images/pattern-background-desktop.svg");
     background-color: var(--PaleBlue);
     background-repeat: repeat-x;
 }
+
 .card{
     margin: 80px auto;
     border-radius: 15px;
